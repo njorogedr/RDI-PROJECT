@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Café</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Book Café</h1>
+      <nav id="navbar">
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to the Cozy Book Café</h2>
+      <p>Enjoy coffee, pastries, and great reads in a warm atmosphere.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Coffee</h3>
+          <p>Espresso, Latte, Cappuccino</p>
+        </div>
+        <div class="card">
+          <h3>Pastries</h3>
+          <p>Croissants, Muffins, Cookies</p>
+        </div>
+        <div class="card">
+          <h3>Teas</h3>
+          <p>Green, Black, Herbal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books" class="books">
+    <div class="container">
+      <h2>Book Collection</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Fiction</h3>
+          <p>Modern novels, classics, fantasy, and more.</p>
+        </div>
+        <div class="card">
+          <h3>Non-Fiction</h3>
+          <p>Biographies, history, and self-help books.</p>
+        </div>
+        <div class="card">
+          <h3>Magazines</h3>
+          <p>Latest issues on culture, design, and travel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Book Café. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.getElementById('nav-list');
+
+    hamburger.addEventListener('click', () => {
+      navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
